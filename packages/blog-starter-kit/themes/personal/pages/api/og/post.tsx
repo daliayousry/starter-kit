@@ -23,13 +23,10 @@ const fontBold = fetch(new URL('../../../assets/Montserrat-Bold.ttf', import.met
 	(res) => res.arrayBuffer(),
 );
 
-const fontExtraBold = fetch(
-	new URL('../../../assets/Montserrat-ExtraBold.ttf', import.meta.url),
-).then((res) => res.arrayBuffer());
 
 export default async function handler(req: NextRequest) {
-	const [fontDataRegular, fontDataMedium, fontDataSemiBold, fontDataBold, fontDataExtraBold] =
-		await Promise.all([fontRegular, fontMedium, fontSemiBold, fontBold, fontExtraBold]);
+	const [fontDataRegular, fontDataMedium, fontDataSemiBold, fontDataBold, ] =
+		await Promise.all([fontRegular, fontMedium, fontSemiBold, fontBold, ]);
 
 	const { searchParams } = new URL(req.url);
 
@@ -183,12 +180,6 @@ export default async function handler(req: NextRequest) {
 					data: fontDataBold,
 					style: 'normal',
 					weight: 700,
-				},
-				{
-					name: 'Typewriter',
-					data: fontDataExtraBold,
-					style: 'normal',
-					weight: 800,
 				},
 			],
 		},
