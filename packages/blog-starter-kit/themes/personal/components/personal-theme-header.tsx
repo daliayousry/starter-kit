@@ -60,30 +60,24 @@ export const PersonalHeader = () => {
 	);
 
 	return (
-		<header className="grid grid-cols-2 items-center gap-5 ">
+		<header className="grid grid-cols-2 items-center gap-5 mb-10 ">
 			<div className="col-span-full md:col-span-1">
 				<h1>
 					<Link
-						className="flex flex-row items-center gap-2 text-lg font-bold leading-tight tracking-tight text-white dark:text-white"
+						className="flex flex-row items-center gap-2 text-lg font-bold leading-tight tracking-tight  dark:text-white"
 						href="/"
 						aria-label={`${publication.author.name}'s blog home page`}
 					>
-						{publication.author.profilePicture && (
 							<img
-								className="block h-8 w-8 rounded-full fill-current"
-								alt={publication.author.name}
-								src={resizeImage(publication.author.profilePicture, {
-									w: 400,
-									h: 400,
-									c: 'face',
-								})}
+								className="block w-[100px] rounded-full fill-current"
+								src="/assets/blog/authors/Dozo-Logo.svg"
 							/>
-						)}
-						{publication.title}
+					
 					</Link>
 				</h1>
 			</div>
 			<div className="col-span-full flex flex-row items-center justify-between gap-4 md:col-span-1 md:justify-end">
+				<h1 className="text-white ">Back</h1>
 				<nav>{navList}</nav>
 				{/* <Button
           label=""
