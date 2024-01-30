@@ -13,6 +13,17 @@ module.exports = {
 				success: '#0070f3',
 				cyan: '#79FFE1',
 				primary: colors.blue,
+				purple: {
+					100: '#F4F4FF',
+					200: '#E2E1FF',
+					300: '#CBCCFF',
+					400: '#ABABFF',
+					500: '#8D8DFF',
+					600: '#5D5DFF',
+					700: '#4B4ACF',
+					800: '#38379C',
+					900: '#262668',
+				  },
 			},
 			typography: () => ({
 				DEFAULT: {
@@ -63,17 +74,7 @@ module.exports = {
 				sm: '0 5px 10px rgba(0, 0, 0, 0.12)',
 				md: '0 8px 30px rgba(0, 0, 0, 0.12)',
 			},
-			purple: {
-				100: '#F4F4FF',
-				200: '#E2E1FF',
-				300: '#CBCCFF',
-				400: '#ABABFF',
-				500: '#8D8DFF',
-				600: '#5D5DFF',
-				700: '#4B4ACF',
-				800: '#38379C',
-				900: '#262668',
-			  },
+		
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],
