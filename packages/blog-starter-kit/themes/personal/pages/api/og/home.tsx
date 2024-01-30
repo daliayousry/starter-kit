@@ -64,7 +64,7 @@ export default async function handler(req: NextRequest) {
 		(
 			<div
 				style={{
-					fontFamily: '"Montserrat sans-serif"',
+					fontFamily: 'Montserrat, sans-serif',
 				}}
 				tw={`relative flex h-full w-full p-8 bg-white`}
 			>

@@ -64,6 +64,9 @@ module.exports = {
 			lineHeight: {
 				tight: 1.2,
 			},
+			fontFamily: {
+				montserrat: ['var(--font-montserrat)', 'sans-serif'],
+			  },
 			fontSize: {
 				'5xl': '2.5rem',
 				'6xl': '2.75rem',

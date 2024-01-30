@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 .hashnode-content-style{
-    @apply prose break-words text-slate-950 first:prose-p:mt-0 prose-img:max-w-full prose-p:leading-snug prose-a:underline hover:prose-a:bg-primary-50 dark:hover:prose-a:text-primary-500 dark:hover:prose-a:bg-neutral-800 dark:text-neutral-50 prose-blockquote:leading-snug prose-a:leading-snug prose-figure:leading-snug prose-figcaption:leading-snug prose-pre:leading-snug prose-li:leading-snug prose-ul:leading-snug prose-ol:leading-snug prose-th:leading-snug prose-td:leading-snug lg:prose-xl dark:prose-invert dark:prose-pre:bg-neutral-900 first:prose-h1:mt-0 first:prose-h2:mt-0 first:prose-h3:mt-0 first:prose-h4:mt-0 first:prose-h5:mt-0;
+    @apply prose break-words text-white first:prose-p:mt-0 prose-img:max-w-full prose-p:leading-snug prose-a:underline hover:prose-a:bg-primary-50 dark:hover:prose-a:text-primary-500 dark:hover:prose-a:bg-neutral-800 dark:text-neutral-50 prose-blockquote:leading-snug prose-a:leading-snug prose-figure:leading-snug prose-figcaption:leading-snug prose-pre:leading-snug prose-li:leading-snug prose-ul:leading-snug prose-ol:leading-snug prose-th:leading-snug prose-td:leading-snug lg:prose-xl dark:prose-invert dark:prose-pre:bg-neutral-900 first:prose-h1:mt-0 first:prose-h2:mt-0 first:prose-h3:mt-0 first:prose-h4:mt-0 first:prose-h5:mt-0;
 }
 
 /* Override to remove the backtick */
 .hashnode-content-style :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before, .hashnode-content-style :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after  {
     content: none;
+    color:#ffffff;
 }
 
 .prose code {
@@ -45,4 +46,21 @@
 .dark .prose pre code {
     background-color: transparent;
     color: #ddd;
+}
+.hashnode-content-style :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)),
+.hashnode-content-style :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)),
+.hashnode-content-style :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)),
+.hashnode-content-style :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)),
+.hashnode-content-style :where(h5):not(:where([class~="not-prose"],[class~="not-prose"] *)),
+.hashnode-content-style :where(h6):not(:where([class~="not-prose"],[class~="not-prose"] *)),
+.hashnode-content-style :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) 
+ {
+    color:#FDBA74;
+}
+.hashnode-content-style :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+    color:#0099FF;
+
+}
+.hashnode-content-style :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    line-height: 1.58;
 }
