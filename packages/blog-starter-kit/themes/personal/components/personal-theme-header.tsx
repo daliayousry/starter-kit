@@ -69,7 +69,7 @@ export const PersonalHeader = () => {
 						aria-label={`${publication.author.name}'s blog home page`}
 					>
 							<img
-								className="block w-[100px] rounded-full fill-current"
+								className="block w-[127px] rounded-full fill-current"
 								src="/assets/blog/authors/Dozo-Logo.svg"
 							/>
 					
@@ -77,7 +77,7 @@ export const PersonalHeader = () => {
 				</h1>
 			</div>
 			<div className="col-span-full flex flex-row items-center justify-between gap-4 md:col-span-1 md:justify-end">
-				<h1 className="text-white ">Back</h1>
+				<h1 className="text-white "> <span className="text-purple-600"> ↩ </span> Back</h1>
 				<nav>{navList}</nav>
 				{/* <Button
           label=""

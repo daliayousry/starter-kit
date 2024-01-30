@@ -7,26 +7,11 @@ export const config = {
 	runtime: 'edge',
 };
 
-const fontRegular = fetch(
-	new URL('../../../assets/Montserrat-Regular.ttf', import.meta.url),
-).then((res) => res.arrayBuffer());
 
-const fontMedium = fetch(
-	new URL('../../../assets/Montserrat-Medium.ttf', import.meta.url),
-).then((res) => res.arrayBuffer());
-
-const fontSemiBold = fetch(
-	new URL('../../../assets/Montserrat-SemiBold.ttf', import.meta.url),
-).then((res) => res.arrayBuffer());
-
-const fontBold = fetch(new URL('../../../assets/Montserrat-Bold.ttf', import.meta.url)).then(
-	(res) => res.arrayBuffer(),
-);
 
 
 export default async function handler(req: NextRequest) {
-	const [fontDataRegular, fontDataMedium, fontDataSemiBold, fontDataBold, ] =
-		await Promise.all([fontRegular, fontMedium, fontSemiBold, fontBold, ]);
+	
 
 	const { searchParams } = new URL(req.url);
 
@@ -153,35 +138,5 @@ export default async function handler(req: NextRequest) {
 				</div>
 			</div>
 		),
-		{
-			width: 1200,
-			height: 630,
-			fonts: [
-				{
-					name: 'Typewriter',
-					data: fontDataRegular,
-					style: 'normal',
-					weight: 400,
-				},
-				{
-					name: 'Typewriter',
-					data: fontDataMedium,
-					style: 'normal',
-					weight: 500,
-				},
-				{
-					name: 'Typewriter',
-					data: fontDataSemiBold,
-					style: 'normal',
-					weight: 600,
-				},
-				{
-					name: 'Typewriter',
-					data: fontDataBold,
-					style: 'normal',
-					weight: 700,
-				},
-			],
-		},
 	);
 }
