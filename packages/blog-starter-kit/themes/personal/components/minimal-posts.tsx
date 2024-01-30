@@ -15,7 +15,7 @@ export const MinimalPosts = ({ posts }: Props) => {
 					key={post.id}
 					title={post.title}
 					date={post.publishedAt}
-					img={post.coverImage.url}
+					img={post.coverImage ? post.coverImage.url :''}
 					author={{
 						name: post.author.name,
 					}}

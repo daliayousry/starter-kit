@@ -141,7 +141,7 @@ const Post = ({ publication, post }: PostProps) => {
 			)}
 			<MarkdownToHtml contentMarkdown={post.content.markdown} />
 			{(post.tags ?? []).length > 0 && (
-				<div className="mx-auto w-full text-slate-600 dark:text-neutral-300 md:max-w-screen-md">
+				<div className="mx-auto w-full text-slate-600 dark:text-neutral-300 lg:max-w-screen-lg md:max-w-screen-md">
 					<ul className="flex flex-row flex-wrap items-center gap-2">{tagsList}</ul>
 				</div>
 			)}
@@ -168,7 +168,7 @@ export default function PostOrPage(props: Props) {
 	return (
 		<AppProvider publication={publication} post={maybePost}>
 			<Layout>
-				<Container className="mx-auto flex max-w-3xl flex-col items-stretch gap-10 px-5 py-10">
+				<Container className="mx-auto flex max-w-[55rem] flex-col items-stretch gap-10 px-5 py-10">
 					<PersonalHeader />
 					<article className="flex flex-col items-start gap-10 pb-10">
 						{props.type === 'post' && <Post {...props} />}

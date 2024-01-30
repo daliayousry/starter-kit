@@ -17,7 +17,9 @@ export const Layout = ({ children }: Props) => {
 		<>
 			<Meta />
 			<Scripts />
+
 			<div className={`${montserrat.variable} font-montserrat min-h-screen bg-[#0F172A] dark:bg-neutral-950`}>
+
 				<main>{children}</main>
 			</div>
 			<Analytics />
