@@ -20,7 +20,7 @@ export const MinimalPostPreview = ({ title, date, slug, commentCount, img }: Pro
 		<img src={img} className="col-span-4 md:col-span-4 rounded-md w-[250px]" alt="Image" />
 	  
 		<div className="col-span-8 md:col-span-8">
-		  <h2 className="text-lg leading-tight tracking-tight text-black text-white dark:text-white">
+		  <h2 className="text-lg leading-tight tracking-tight text-white text-white dark:text-white">
 			<Link href={postURL}>{title}</Link>
 		  </h2>
 		  <p className="flex flex-row items-center gap-2">

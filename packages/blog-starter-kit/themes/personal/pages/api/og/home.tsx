@@ -8,23 +8,23 @@ export const config = {
 };
 
 const fontRegular = fetch(
-	new URL('../../../assets/PlusJakartaSans-Regular.ttf', import.meta.url),
+	new URL('../../../assets/Montserrat-Regular.ttf', import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 const fontMedium = fetch(
-	new URL('../../../assets/PlusJakartaSans-Medium.ttf', import.meta.url),
+	new URL('../../../assets/Montserrat-Medium.ttf', import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 const fontSemiBold = fetch(
-	new URL('../../../assets/PlusJakartaSans-SemiBold.ttf', import.meta.url),
+	new URL('../../../assets/Montserrat-SemiBold.ttf', import.meta.url),
 ).then((res) => res.arrayBuffer());
 
-const fontBold = fetch(new URL('../../../assets/PlusJakartaSans-Bold.ttf', import.meta.url)).then(
+const fontBold = fetch(new URL('../../../assets/Montserrat-Bold.ttf', import.meta.url)).then(
 	(res) => res.arrayBuffer(),
 );
 
 const fontExtraBold = fetch(
-	new URL('../../../assets/PlusJakartaSans-ExtraBold.ttf', import.meta.url),
+	new URL('../../../assets/Montserrat-ExtraBold.ttf', import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 const kFormatter = (num: number) => {
@@ -64,7 +64,7 @@ export default async function handler(req: NextRequest) {
 		(
 			<div
 				style={{
-					fontFamily: '"Plus Jakarta Sans"',
+					fontFamily: '"Montserrat sans-serif"',
 				}}
 				tw={`relative flex h-full w-full p-8 bg-white`}
 			>
@@ -72,7 +72,7 @@ export default async function handler(req: NextRequest) {
 				{/* if the site is set to open in dark mode by default, change text-black to text-white and bg-white to bg-black */}
 				{!isTeam && (
 					<div
-						tw={`flex w-full flex-col items-center justify-center text-black h-full p-10 bg-[${bannerBackground}] relative rounded-xl`}
+						tw={`flex w-full flex-col items-center justify-center text-white h-full p-10 bg-[${bannerBackground}] relative rounded-xl`}
 					>
 						<div tw="absolute -top-px -left-px -right-px -bottom-px rounded-xl border-2 border-black/5" />
 						<div tw="mx-auto flex flex-row items-center" style={{ width: '90%' }}>
@@ -132,7 +132,7 @@ export default async function handler(req: NextRequest) {
 				{/* if the site is set to open in dark mode by default, change text-black to text-white and bg-white to bg-black */}
 				{isTeam && (
 					<div
-						tw={`flex w-full flex-col items-center justify-center text-black h-full p-10 bg-[${bannerBackground}] relative rounded-xl`}
+						tw={`flex w-full flex-col items-center justify-center text-white h-full p-10 bg-[${bannerBackground}] relative rounded-xl`}
 					>
 						<div tw="absolute -top-px -left-px -right-px -bottom-px rounded-xl border-2 border-black/5" />
 						<div tw="mx-auto flex flex-row items-center" style={{ width: '80%' }}>
