@@ -56,6 +56,7 @@
 .hashnode-content-style :where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) 
  {
     color:#FDBA74;
+    font-weight: 500;
 }
 .hashnode-content-style :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     color:#0099FF;
