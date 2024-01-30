@@ -16,7 +16,7 @@ type Props = {
 export const MinimalPostPreview = ({ title, date, slug, commentCount, img }: Props) => {
 	const postURL = `/${slug}`;
 	return (
-		<section className="grid grid-cols-12 gap-8">
+		<section className="grid grid-cols-12 gap-8 items-center">
 		<img src={img} className="col-span-4 md:col-span-4 rounded-md w-[250px]" alt="Image" />
 	  
 		<div className="col-span-8 md:col-span-8">

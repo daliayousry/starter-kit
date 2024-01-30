@@ -68,7 +68,7 @@ const PublicationPosts = (props: {
             <Button
               type="button"
               variant="transparent"
-              className="w-full justify-center px-4 py-2 text-lg text-blue-600 dark:text-blue-500"
+              className="w-full justify-center px-4 py-2 text-lg text-white dark:text-blue-500"
               onClick={fetchMore}
             >
               <span>Load more</span>
