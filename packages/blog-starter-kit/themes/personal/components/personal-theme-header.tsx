@@ -70,7 +70,7 @@ export const PersonalHeader = () => {
 					>
 							<img
 								className="block w-[127px] rounded-full fill-current"
-								src="/assets/blog/authors/Dozo-Logo.svg"
+								src="/blog/assets/blog/authors/Dozo-Logo.svg"
 							/>
 					
 					</Link>
