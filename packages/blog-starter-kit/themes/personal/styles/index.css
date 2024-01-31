@@ -65,4 +65,17 @@
 .hashnode-content-style :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     line-height: 1.58;
 }
+.zigzag-img-left{
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    opacity: 0.5;
+}
+.zigzag-img-right{
+    right: 0;
+    position: absolute;
+    top: 55rem;
+    width: 20%;
+    opacity: 1.5;
 
+}

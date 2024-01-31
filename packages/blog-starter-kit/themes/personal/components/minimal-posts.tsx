@@ -9,13 +9,12 @@ type Props = {
 };
 
 export const MinimalPosts = ({ posts }: Props) => {
-	console.log("posts", posts)
 	return (
 		<section className="flex w-full flex-col items-stretch gap-10">
 			{posts[0] &&
 				<div className="mb-8">
 					<img className="rounded-md mb-6" src={posts[0].coverImage ? posts[0].coverImage.url : ''} />
-					<h2 className="text-lg  text-white text-white dark:text-white font-bold w-[70%]">
+					<h2 className="text-lg  text-white text-white dark:text-white font-bold">
 						<Link href={`/${posts[0].slug}`}>{posts[0].title}</Link>
 					</h2>
 					<p className="flex flex-row items-center gap-2 mt-2">
@@ -24,7 +23,7 @@ export const MinimalPosts = ({ posts }: Props) => {
 						</Link>
 					</p>
 				</div>}
-			{posts.map((post, index) => (
+			{posts.map((post) => (
 				<MinimalPostPreview
 					key={post.id}
 					title={post.title}
@@ -37,6 +36,7 @@ export const MinimalPosts = ({ posts }: Props) => {
 					commentCount={post.comments?.totalDocuments}
 				/>
 			)).slice(1)}
+
 		</section>
 	);
 };

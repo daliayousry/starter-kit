@@ -76,7 +76,7 @@ export const PersonalHeader = () => {
 					</Link>
 				</h1>
 			</div>
-			<div className="col-span-full flex flex-row items-center justify-between gap-4 md:col-span-1 md:justify-end">
+			<div className="flex flex-row items-center  gap-4 md:col-span-1 justify-end">
 				<h1 className="text-white "> <span className="text-purple-600"> ↩ </span> Back</h1>
 				<nav>{navList}</nav>
 				{/* <Button

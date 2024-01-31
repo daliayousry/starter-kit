@@ -19,6 +19,8 @@ export const Layout = ({ children }: Props) => {
 			<Scripts />
 
 			<div className={`${montserrat.variable} font-montserrat min-h-screen bg-[#0F172A] dark:bg-neutral-950`}>
+			<img className="zigzag-img-left" src="/assets/blog/authors/zigzag.png"/>
+			<img className="zigzag-img-right" src="/assets/blog/authors/zigzag.png"/>
 
 				<main>{children}</main>
 			</div>
