@@ -79,3 +79,9 @@
     opacity: 1.5;
 
 }
+
+article h1:first-child {
+    text-align: center !important;
+    letter-spacing: 0.025em;
+    line-height: 1.375;
+  }

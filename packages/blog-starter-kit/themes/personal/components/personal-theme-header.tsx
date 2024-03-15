@@ -60,11 +60,13 @@ export const PersonalHeader = () => {
 	);
 
 	return (
+		
 		<header className="grid grid-cols-2 items-center gap-5 mb-10 ">
-			<div className="col-span-full md:col-span-1">
+			<div className="md:col-span-1">
 				<h1>
 					<Link
 						className="flex flex-row items-center gap-2 text-lg font-bold leading-tight tracking-tight  dark:text-white"
+						/* we need to edit the URL When It's Live*/
 						href="/"
 						aria-label={`${publication.author.name}'s blog home page`}
 					>

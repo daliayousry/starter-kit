@@ -51,12 +51,12 @@ const Post = ({ publication, post }: PostProps) => {
 	useEmbeds({ enabled: canLoadEmbeds });
 	const tagsList = (post.tags ?? []).map((tag) => (
 		<li key={tag.id}>
-			<Link
-				href={`/tag/${tag.slug}`}
-				className="block rounded-full border px-2 py-1 font-medium hover:bg-slate-50 dark:border-neutral-800 dark:hover:bg-neutral-800 md:px-4"
+			<div
+				
+				className="block rounded-full border px-2 py-1 font-medium  border-white  md:px-4 text-white"
 			>
 				#{tag.slug}
-			</Link>
+			</div>
 		</li>
 	));
 
