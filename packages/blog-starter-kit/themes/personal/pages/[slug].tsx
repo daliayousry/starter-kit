@@ -131,7 +131,7 @@ const Post = ({ publication, post }: PostProps) => {
 			<h1 className="text-4xl leading-tight tracking-tight text-white dark:text-white font-bold">
 				{post.title}
 			</h1>
-			<div className="text-neutral-600 dark:text-neutral-400">
+			<div className="text-[#a2a2a2] dark:text-[#a2a2a2]">
 				<DateFormatter dateString={post.publishedAt} />
 			</div>
 			{!!coverImageSrc && (

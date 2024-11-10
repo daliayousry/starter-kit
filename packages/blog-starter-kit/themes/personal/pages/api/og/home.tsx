@@ -45,9 +45,7 @@ export default async function handler(req: NextRequest) {
 	return new ImageResponse(
 		(
 			<div
-				style={{
-					fontFamily: 'Montserrat, sans-serif',
-				}}
+				
 				tw={`relative flex h-full w-full p-8 bg-white`}
 			>
 				{/* PERSONAL BLOG The following parent div is for personal blogs */}
