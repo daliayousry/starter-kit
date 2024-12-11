@@ -79,6 +79,14 @@
     color: #E0E0E0;
     font-weight: 300;
   }
+.hashnode-content-style :where(ul > li):not(:where([class~="not-prose"],[class~="not-prose"] *)){
+    font-family: var(--font-inter); /* Apply Inter font */
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    color: #E0E0E0;
+    font-weight: 300;
+}
 .zigzag-img-left{
     position: absolute;
     top: 50%;
